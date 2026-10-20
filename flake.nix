@@ -10,7 +10,7 @@
   in {
     devShells."x86_64-linux".default = pkgs.mkShell {
       buildInputs = with pkgs; [
-        libinput wayland wayland-scanner libdrm wlroots_0_19 pixman fcft libxkbcommon wayland-protocols pkg-config gnumake
+        libinput wayland wayland-scanner libdrm wlroots_0_19 pixman fcft libxkbcommon wayland-protocols pkg-config gnumake libxcb libxcb-wm
       ];
     };
   };
